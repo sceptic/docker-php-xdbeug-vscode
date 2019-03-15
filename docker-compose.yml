@@ -1,0 +1,13 @@
+version: "3"
+  
+services:
+  hello-world-demo:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: hello-world-demo
+    container_name: hello-world-demo
+    ports:
+      - 80:80
+    volumes:
+       - ./:/var/www/html
