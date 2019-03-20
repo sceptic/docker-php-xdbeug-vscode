@@ -1,12 +1,14 @@
 version: "3"
   
 services:
-  hello-world-demo:
+  demo-xdbg:
     build:
+      args:
+        - WITH_XDEBUG=true
       context: .
       dockerfile: ./Dockerfile
-    image: hello-world-demo
-    container_name: hello-world-demo
+    image: demo-xdbg
+    container_name: demo-xdbg
     ports:
       - 80:80
     volumes:

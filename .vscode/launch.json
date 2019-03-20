@@ -7,7 +7,7 @@
             "request": "launch",
             "log": true,
             "pathMappings": {
-            "/var/www/html": "/home/adrian/phpxdebug"
+            "/var/www/html": "${workspaceRoot}"
             }
           }
     ]
